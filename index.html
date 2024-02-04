@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>RostJob</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="96x96">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="CSS/overlayscrollbars.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script/overlayscrollbars.browser.es5.min.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/swiper-bundle.min.js" defer></script>
+    <script src="script/main_swiper.js" defer></script>
+</head>
+<body>
+
+    <!--------Шапка страницы----------->
+    <header>
+        <div class="contact">
+            <a class="email" href="mailto:manager@rostjob.com">manager@rostjob.com</a>
+            <a class="teleph" href="tel:8(800)700-53-17">8(800)700-53-17</a>
+        </div>
+        <div class="main_header_block">
+            <div class="back left"></div>
+            <div class="container header">
+                <div class="logo icon_logo"></div>
+                <div class="navigations">
+                    <nav>
+                        <a class="anchor" href="#company">О компании</a>
+                        <a class="anchor" href="#contact">Контакты</a>
+                    </nav>
+                    <div class="authentication">
+                        <a href=""><button class="main_button head">Регистрация</button></a>
+                    </div>
+                    <div class="burger">
+                        <div class="burger_button"></div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="back"></div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="footer_logo">
+            <img src="images/icon.png" alt="">
+        </div>
+        <nav>
+            <a class="anchor" href="#company">О компании</a>
+            <a class="anchor" href="#contact">Контакты</a>
+            <button class="main_button head">Регистрация</button>
+        </nav>
+    </div>
+    <div class="search_menu" id="recruts">
+        <div class="container">
+            <div class="menu_navigation">
+                <h2>Рекрутам</h2>
+                <div class="menu_navigation_button">
+                    <button class="main_button white" onclick="openInMenu()"><span class="icon_arrow-left"></span>Заказчикам</button>
+                    <button class="close_btn icon_cross" onclick="closeSearchMenu(document.getElementById('recruts'))"></button>
+                </div>
+                
+            </div>
+            <div class="search_header">
+                <h2>Работа менеджером по поиску персонала на удаленке</h2>
+                <p>Зарабатывайте за трудоустроенного сотрудника не выходя из дома, подбирая персонал для наших клиентов с помощью платформы RostJob</p>
+                <button class="main_button white">Зарегистрироваться</button>
+            </div>
+            <div class="recruts_tutorial">
+                <h3>Что нужно делать?</h3>
+                <ul>
+                    <li class="noborder"><div class="number">01</div> Зарегистрируйтесь на нашем сайте</li>
+                    <li><div class="number">02</div> В личном кабинете выберите заявку от заказчика на подбор персонала</li>
+                    <li><div class="number">03</div> Находите потенциального кандидата на вакансию клиента</li>
+                    <li><div class="number">04</div> Отправляете на финальное собеседование</li>
+                    <li><div class="number">05</div> Получаете вознаграждение за каждого кандидата, прошедшего минимальный испытательный срок</li>
+                </ul>
+            </div>
+            <div class="statistick_block">
+                <h3>Статистика за последний месяц</h3>
+                <div class="statistick_block_content">
+                    <div class="statistick_block_item">
+                        <div class="icon_statistics"></div>
+                        <h4>8 604 500 ₽</h4>
+                        <p>Выплачено вознаграждений</p>
+                    </div>
+                    <div class="statistick_block_item">
+                        <div class="icon_team"></div>
+                        <h4>44</h4>
+                        <p>Рекрутеров</p>
+                    </div>
+                    <div class="statistick_block_item">
+                        <div class="icon_application"></div>
+                        <h4>1308</h4>
+                        <p>Закрыто заявок
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search_menu" id="consumer">
+        <div class="container">
+            <div class="menu_navigation">
+                <h2>Заказчикам</h2>
+                <div class="menu_navigation_button">
+                    <button class="main_button white" onclick="openInMenu()">Рекрутам<span class="icon_arrow-right"></span></button>
+                    <button class="close_btn icon_cross" onclick="closeSearchMenu(document.getElementById('consumer'))"></button>
+                </div>
+            </div>
+            <div class="search_header">
+                <h2>Поможем найти сотрудников для вашей компании</h2>
+                <p>Оставляйте заявку и наш менеджер свяжется с вами в удобное для вас время!</p>
+                <button class="main_button white">Оставить заявку</button>
+            </div>
+            <div class="tutorial_block">
+                <div class="tutorial_block_item">
+                    <div class="number">01</div>
+                    <h3>Оставьте заявку на нашем сайте</h3>
+                    <p>Наш менеджер свяжется с вами в течение 20 минут</p>
+                </div>
+                <div class="line"></div>
+                <div class="tutorial_block_item">
+                    <div class="number">02</div>
+                    <h3>Пополните лицевой счет</h3>
+                    <p>Наша гарантия - если не найдем кандидата вернем ваши деньги</p>
+                </div>
+            </div>
+            <div class="tutorial_block">
+                <div class="tutorial_block_item">
+                    <div class="number">03</div>
+                    <h3>Принимайте кандидатов</h3>
+                    <p>Отбор, первичное интервью и отправка кандидата к вам</p>
+                </div>
+                <div class="line"></div>
+                <div class="tutorial_block_item">
+                    <div class="number">04</div>
+                    <p>Мы предоставляем полное сопровождение, от заявки до выхода сотрудника на работу</p>
+                </div>
+            </div> 
+            <div class="proposition_block">
+                <h2>Мы предлагаем</h2>
+                <div class="proposition">
+                    <div class="proposition_item">
+                        <h3>Массовый подбор персонала</h3>
+                        <p>Поиск линейного персонала в большом количестве за минимальные сроки</p>
+                    </div>
+                    <div class="proposition_item">
+                        <h3>Подбор специалистов среднего звена</h3>
+                        <p>Поиск специалиста среднего звена под конкретный запрос работодателя</p>
+                    </div>
+                    <div class="proposition_item">
+                        <h3>Подбор специалистов высшего звена</h3>
+                        <p>Поиск высококвалифицированного специалиста под конкретный запрос работодателя</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main_back">
+        <img src="images/company.jpg" alt="" class="main_back">
+    </div>
+
+    <div class="main_block">
+        <div class="main_swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/most.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/people_zav.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/zav6jpg.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/port.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo_block">
+                <div class="presentaition">
+                    <img src="images/logo.svg" alt="">
+                    <p>Кадровое агентство по поиску и подбору персонала.</p>
+                    <div class="recruts">
+                        <div class="arrow left"><span class="icon_arrow-left"></span></div>
+                        <div class="arrow right"><span class="icon_arrow-right"></span></div>
+                    </div>
+                </div>
+                
+                <div class="logo_button_block">
+                    <button class="main_button main" id="recruts_btn">Рекрутам</button>
+                    <button class="main_button main" id="consumer_btn">Заказчикам</button>
+                </div>
+            </div>
+            <div class="contact_head_block">
+                <div class="phone">
+                    <a class="social icon_vk" href="https://vk.com/rostjobcom"></a>
+                    <a href="tel:8(800)700-53-17"><button class="main_button active main">Заказать звонок</button></a>
+                    <div class="phone_label">
+                        <a href="tel:8(800)700-53-17">8(800)700-53-17</a>
+                        <p>Звонки по России бесплатно</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="company_description" id="company">
+        <div class="container company lite">
+            <div class="description">
+                <h2 class="main_title">
+                    О компании
+                </h2>
+                <p>Компания «РостДжоб» является разработчиком платформы для подбора сотрудников. Компания была создана с целью упростить и оптимизировать процесс подбора персонала для организаций различных отраслей.</p>
+                <p class="mission">Миссия компании – обеспечивать Российские компании качественным персоналом в сжатые сроки.</p>
+            </div>
+            <div class="company">
+                <img src="images/logo.svg" alt="">
+                <p>Кадровое агентство по поиску и подбору персонала</p>
+            </div>
+        </div>
+        <div class="container advantages">
+            <h3>Преимущества работы с нами</h3>
+            <ul>
+                <li class="noborder"><div class="number">01</div> Значительная экономия средств и времени, Вам не надо регистрироваться и дополнительно оплачивать все известные сервисы, чтобы разместить вакансии.</li>
+                <li><div class="number">02</div> Размещая заявки у нас в системе - они автоматически выгружается на всех профильных ресурсах.</li>
+                <li><div class="number">03</div> С кандидатами проводят первичное собеседование и после его прохождения, соискатель передается Вам для финального собеседования, что позволяет рационально использовать рабочее время.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="interrupting_block">
+        <div class="container statistic">
+            <div class="statistic_item">
+                <h4>30</h4>
+                <p>Рекрутеров в центральном офисе</p>
+            </div>
+            <div class="statistic_item">
+                <h4>500</h4>
+                <p>Рекрутеров по России</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="client_block">
+        <div class="container">
+            <h2 class="main_title">
+                Наши клиенты
+            </h2>
+            <div class="client_swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/clients/1dsk.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/abmo.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/akbars.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/automaster.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/bulgar.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/chelni.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/daewoo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/domkor.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/doorhan.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/essen.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/ford_sollers.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/gaz.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/gazprom.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/haier.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/haz.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/holod.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/indel.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/industrial.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/kamaz.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/KMT.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/leoni.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/leroy.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/liaz.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/med.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/mers.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/metrovagon.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/moryak.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/pik.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/pireline.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/PitTract.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/retail.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/rostelmash.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/rukki.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/tatneft.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/tempo.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/transmash.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/UAC.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/uaz.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/ural.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/vig.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/yazaki.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/clients/zaliv.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_block" id="contact">
+        <div class="container lite">
+            <h2 class="main_title">
+                Контакты
+            </h2>
+        </div>
+        <div class="contacts_line">
+            <div class="container">
+                <div class="flex">
+                    <a href="tel:8(800)700-53-17" class="icon_tel"></a>
+                    <a class="teleph" href="tel:8(800)700-53-17">8(800)700-53-17</a>
+                </div>
+                <div class="flex">
+                    <a href="mailto:manager@rostjob.com" class="icon_email"></a>
+                    <a class="email" href="mailto:manager@rostjob.com">manager@rostjob.com</a>
+                </div>
+                <a class="icon_vk" href=""></a>
+            </div>
+        </div>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dd77c698013e49850c291ff61adda955c2bc0f20bfaf280934eef6b4ef215b9&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer_item">
+                <div class="footer_logo">
+                    <img src="images/icon.png" alt="">
+                    <p>Кадровое агентство по поиску и подбору персонала</p>
+                </div>
+                <p class="addres">Республика Татарстан, Набережные Челны, улица Академика Рубаненко, дом 4</p>
+                <p class="copyright">© 2020 - 2024</p>
+            </div>
+            <div class="footer_item">
+                <div class="flex">
+                    <a href="mailto:manager@rostjob.com" class="icon_email"></a>
+                    <a class="email" href="mailto:manager@rostjob.com">manager@rostjob.com</a>
+                </div>
+                <div class="flex">
+                    <a href="tel:8(800)700-53-17" class="icon_tel"></a>
+                    <a class="telephone" href="tel:8(800)700-53-17">8(800)700-53-17</a>
+                </div>
+                
+                <button class="main_button head">Договор оферты</button>
+            </div>
+        </div>
+       
+    </footer>
+</body>
+</html>
