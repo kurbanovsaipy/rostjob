@@ -103,7 +103,7 @@ function handleTouchMoveRecrut(event) {
     let x2 = event.touches[0].clientX;
     let y2 = event.touches[0].clientY;
     let xDiff = x2 - x1;
-    let yDiff = y2 - y1;
+    let yDiff = (y2 - y1)*2;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
@@ -123,7 +123,7 @@ function handleTouchMoveConsumer(event) {
     let x2 = event.touches[0].clientX;
     let y2 = event.touches[0].clientY;
     let xDiff = x2 - x1;
-    let yDiff = y2 - y1;
+    let yDiff = (y2 - y1)*2;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff < 0) {
